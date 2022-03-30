@@ -13,6 +13,7 @@ url = baseUrl + quote_plus(plusUrl)
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get(url)
 
+#wait for image fetching 
 time.sleep(3)
 
 html = driver.page_source
